@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>Muhammad Daffa : Portfolio</title>
+</head>
+<body>
+	<nav>
+			<h2 class="logo">Portfolio</h2>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#project">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+	</nav>
+	<div class="blur_bg"></div>
+	<!-- ==========HOME============ -->
+	<section class="home" id="home">
+
+		<h1>Muhammad Daffa Hibatullah</h1>
+		<div class="home_text">
+			<h4>Hi, I am a fresh graduate student with a Bachelor's Degree in Electrical Engineering form Universitas Brawijaya with a minor in Electronic Engineering. I have passion for electrical engineering especially in control and robotics. I love to disassemble a gadget just to see how it works or want to try to fix it. I also like to make things or do a project to try and apply what I have learned.</h4>
+			<h4>This website contains several projects that I have done while I was in the organization and internship during my college years. See the contact section for my most recent resume and my contact information</h4>
+		</div>
+	</section>
+	<!-- ==========PROJECTS============ -->
+	<section class="project" id="project">
+		<h2 class="project_title">Projects</h2>
+			<div class="project_grid">
+					<a href="#project" id="myBtn" class="item1">
+						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<div class="overlay">
+							<h4>Omnidirectional Mobile Robot</h4>
+							<p>Participation in the Kontes Robot Indonesia (KRI) Competition
+							</p>
+							<!-- <p>Our robot can be seen on the video. the source code can be found on github here.</p> -->
+						</div>
+					</a>
+					<a href="#project" id="myBtn2" class="item2">
+						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<div class="overlay">
+							<h4>Remote Practicum Module</h4>
+							<p>Internship program held by the university during the COVID-19 pandemic
+							</p>
+						</div>
+					</a>
+					<a href="#project" id="myBtn3" class="item3">
+						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<div class="overlay">
+							<h4>Lines Detection using OpenCV</h4>
+							<p>Internship program held by the university during the COVID-19 pandemic
+							</p>
+						</div>
+					</a>	
+					<a href="#project" id="myBtn4" class="item4">
+						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<div class="overlay">
+							<h4>Optimization Project</h4>
+							<p>A project from my final project, making an optimization algorithm to estimating DC Motor parameter values using Particle Swarm Optimization (PSO) algorithm in Arduino Microcontroller</p>
+						</div>
+					</a>
+			</div>
+	</section>
+
+	<!-- ======================ABOUT ME================= -->
+	<section class="contact" id="contact">
+		<div class="contact-grid">
+			<div class="about">
+				<h3>About Me</h3>
+			</div>
+			<div class="info">
+				<h3>Contact</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- ======================MODAL BOX================= -->
+	<div id="myModal" class="modal">
+	  <!-- Modal content -->
+	    <div class="modal-content">
+		    <div class="modal-body"></div>
+		    	<span class="close" id="close">&times;</span>
+		      <div class="slideshow-container">
+		      	<div class="modal-item">
+		      		<div class="mySlides fade">
+					  <img src="img/omniRobot project/mainboard robot 2020.jpg" style="width:99%;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Mainboard Robot with STM32F4 as Microcontroller</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <img src="img/omniRobot project/IMG_20220219_125440.jpg" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Two Prototype Robots for KRI 2020</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <iframe src="https://drive.google.com/file/d/1Cmgb1EN72LRwNPXfYc_4wZHtk_1lfyBf/preview" width="640" height="370" allow="autoplay"></iframe>
+					  <div class="text">Demonstration of Autonomous Movement during KRI 2019</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <iframe src="https://drive.google.com/file/d/18aIAkPMqlX6Ph0ptx3mn43bCn2tvDq-L/preview" width="640" height="370" allow="autoplay"></iframe>
+					  <div class="text">Demonstration of Robot Movement using PS2 Controller during KRI 2021</div>
+					</div>
+
+					<!-- <a class="prev" onclick="plusSlides()">&#10094;</a>
+					<a class="next" onclick="plusSlides()">&#10095;</a> -->
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>  
+					</div>
+		      	</div>
+		      	<div class="modal-item2">
+		      		<h3>Omnidirectional Mobile Robot</h3>
+		      		<p>As a member of the Brawijaya Robotics Team, every year our team is assigned to represent Brawijaya University in the Kontes Robot Indonesia (KRI) held by the Ministry of Education and Culture. I have a task to develop firmware so that the robot can complete the task of bypassing several obstacles. We make the robot can run autonomously using STM32 as a microcontroller in our embedded system.</p><br>
+		      		<p>Our robot can be seen on the video. The source code can be found on github <a href="https://github.com/Enlicht21/invicto" target="_blank">here</a>.</p>
+		      	</div>
+			  </div>    
+	    </div>
+	</div>
+
+	<div id="myModal2" class="modal">
+	  <!-- Modal content -->
+	    <div class="modal-content">
+		    <div class="modal-body"></div>
+		    	<span class="close" id="close2">&times;</span>
+		      <div class="slideshow-container">
+		      	<div class="modal-item">
+					<div class="mySlides2 fade">
+					  <img src="img\iot intern\pcb design.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">PCB Design Designed by My Teammate</div>
+					</div>
+					<div class="mySlides2 fade">
+					  <img src="img\iot intern\ui2.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Web User Interface Designed by Me (1)</div>
+					</div>
+					<div class="mySlides2 fade">
+					  <img src="img\iot intern\ui1.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Web User Interface Designed by Me (2)</div>
+					</div>
+					<div class="mySlides2 fade">
+					  <img src="img\iot intern\practicum module prototype.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Practicum Modul Prototype</div>
+					</div>
+
+					<div style="text-align:center">
+					  <span class="dot2" onclick="currentSlide(1)"></span> 
+					  <span class="dot2" onclick="currentSlide(2)"></span> 
+					  <span class="dot2" onclick="currentSlide(3)"></span>
+					  <span class="dot2" onclick="currentSlide(4)"></span> 
+					</div>
+		      	</div>
+		      	<div class="modal-item2">
+		      		<h3>Remote Modul Practicum</h3>
+		      		<p>Difficulties in lecture activities during the covid 19 pandemic made the Universitas Brawijaya digital system laboratory hold an internship program. In this internship, we, consisting of two people, were given a project to develop a remote practicum module. my task is to create a database, a simple web interface, and create a program for esp32 which is already embedded in the practicum module so that it can be connected to the internet network. In the early development of this module what can be done is to change the state of the pin logic (HIGH or LOW).</p><br>
+		      		<p>The source code of this project can be found on github <a href="https://github.com/Enlicht21/IoT-Practicum" target="_blank">here</a>.</p>
+		      	</div>
+			  </div>
+
+	    </div>
+	</div>
+
+	<div id="myModal3" class="modal">
+	  <!-- Modal content -->
+	    <div class="modal-content">
+		    <div class="modal-body"></div>
+		    	<span class="close" id="close3">&times;</span>
+		      <div class="slideshow-container">
+		      	<div class="modal-item">
+					<div class="mySlides3 fade">
+					  <img src="img\skripsi\electronic.jpg" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Webcam</div>
+					</div>
+<!-- 					<div class="mySlides3 fade">
+					  <img src="img\skripsi\dcmotor test.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">DC Motor Parameter Testing with the Device</div>
+					</div>
+					<div class="mySlides3 fade">
+					  <img src="img\skripsi\display.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Parameter Value Display on Device</div>
+					</div> -->
+
+					<div style="text-align:center">
+					  <span class="dot4" onclick="currentSlide(1)"></span> 
+<!-- 					  <span class="dot4" onclick="currentSlide(2)"></span> 
+					  <span class="dot4" onclick="currentSlide(3)"></span> -->
+					</div>
+		      	</div>
+		      	<div class="modal-item2">
+		      		<h3>Lines Detection using OpenCV</h3>
+		      		<p>asdxccxzfwEFE</p>
+		      		<p>This project is documented in the form of a student journal which can be found <a href="https://drive.google.com/file/d/1eK4a-Y5Imlpm3NHg4iTuuDU6gd6FZBAV/view?usp=sharing" target="_blank">here</a>.</p>
+		      	</div>
+			  </div>
+
+	    </div>
+	 </div>
+
+	<div id="myModal4" class="modal">
+	  <!-- Modal content -->
+	    <div class="modal-content">
+		    <div class="modal-body"></div>
+		    	<span class="close" id="close4">&times;</span>
+		      <div class="slideshow-container">
+		      	<div class="modal-item">
+					<div class="mySlides4 fade">
+					  <img src="img\skripsi\electronic.jpg" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Electronic Circuit</div>
+					</div>
+					<div class="mySlides4 fade">
+					  <img src="img\skripsi\dcmotor test.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">DC Motor Parameter Testing with the Device</div>
+					</div>
+					<div class="mySlides4 fade">
+					  <img src="img\skripsi\display.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
+					  <div class="text">Parameter Value Display on Device</div>
+					</div>
+
+					<div style="text-align:center">
+					  <span class="dot4" onclick="currentSlide(1)"></span> 
+					  <span class="dot4" onclick="currentSlide(2)"></span> 
+					  <span class="dot4" onclick="currentSlide(3)"></span>
+					</div>
+		      	</div>
+		      	<div class="modal-item2">
+		      		<h3>Optimization Project</h3>
+		      		<p>This is my final project, the purpose of this project is to determine the DC motor parameters by using the Particle Swarm Optimization (PSO) algorithm. In this study, the fitness function of the optimization problem is used to determine the performance of the algorithm used by the Mean Squared Error (MSE) method and the PSO algorithm is processed by the Arduino Uno microcontroller. Input from the system is the angular velocity value obtained from the incremental rotary encoder sensor and the current passing through the motor obtained from the current sensor.</p>
+		      		<p>This project is documented in the form of a student journal which can be found <a href="https://drive.google.com/file/d/1eK4a-Y5Imlpm3NHg4iTuuDU6gd6FZBAV/view?usp=sharing" target="_blank">here</a>.</p>
+		      	</div>
+			  </div>
+
+	    </div>
+	 </div>
+	  
+
+	<!-- =====================SCRIPT======================= -->
+	<script>
+	// ----modal--------------
+	// Get the modal
+	var modal = document.getElementById("myModal");
+	var modal2 = document.getElementById("myModal2");
+	var modal3 = document.getElementById("myModal3");
+	var modal4 = document.getElementById("myModal4");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+	var btn2 = document.getElementById("myBtn2");
+	var btn3 = document.getElementById("myBtn3");
+	var btn4 = document.getElementById("myBtn4");
+
+	// Get the close element that closes the modal
+	var cls = document.getElementById("close");
+	var cls2 =document.getElementById("close2");
+	var cls3 =document.getElementById("close3");
+	var cls4 =document.getElementById("close4");
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	btn2.onclick = function() {
+	  modal2.style.display = "block";
+	}
+	btn3.onclick = function() {
+	  modal3.style.display = "block";
+	}
+	btn4.onclick = function() {
+	  modal4.style.display = "block";
+	}
+	// When the user clicks on <span> (x), close the modal
+	cls.onclick = function () {
+	  modal.style.display = "none";
+	}
+	cls2.onclick = function(){
+		modal2.style.display = "none";
+	}
+	cls3.onclick = function(){
+		modal3.style.display = "none";
+	}	
+	cls4.onclick = function(){
+		modal4.style.display = "none";
+	}
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	  if (event.target == modal2) {
+	    modal2.style.display = "none";
+	  }
+	  if (event.target == modal3) {
+	    modal3.style.display = "none";
+	  }
+	  if (event.target == modal4) {
+	    modal4.style.display = "none";
+	  }	  
+	}
+	// ------------------slideshow---------------
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	showSlides2(slideIndex);
+	showSlides4(slideIndex);
+	showSlides3(slideIndex);
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	  showSlides2(slideIndex = n);
+	  showSlides3(slideIndex = n);
+	  showSlides4(slideIndex = n);
+	}
+	// function plusSlides(n) {
+	//   showSlides(slideIndex += 1);
+	// }
+	// -----------showSlides-----------------
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	function showSlides2(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides2");
+	  var dots = document.getElementsByClassName("dot2");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	function showSlides3(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides3");
+	  var dots = document.getElementsByClassName("dot3");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}	
+	function showSlides4(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides4");
+	  var dots = document.getElementsByClassName("dot4");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+
+*{
+  margin : 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  /* margin: var(--header-height) 0 0 0; */
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  /* color: var(--second-color); */
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/pexels-adrien-olichon-2387793.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1{
+  color: white;
+  margin: auto;
+  font-size: 75px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* ===CLASS CSS=== */
+/*.desc_text{
+ 
+}*/
+
+.home {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border : 3px solid red;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+}
+.home h1{
+  
+  position: relative;
+  top:15%;
+  /*text-align: center;*/
+  /*padding: 70px;*/
+  /*width: 40%;*/
+}
+.blur_bg{
+  background-color: #063852;
+  filter: blur(8px);
+  position: absolute;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.home_text{
+  margin: auto;
+  width: 60%;
+  position: relative;
+  top: 20%;
+}
+
+.home_text h4{
+  color: white;
+  margin: 20px 0px 20px;
+  text-align: justify;
+}
+
+/*===== LAYOUT =====*/
+
+
+/*===== NAV =====*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #FFD700;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+  /* border: 1px solid #FFD700;
+  border-radius: 10px 20px ; */
+}
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  margin: 30px;
+  font-family: var(--bod-font);
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* ====PROJECT==== */
+.project{
+  position: relative;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  border : 3px solid red;
+}
+.project h2{
+    color: white;
+
+}
+
+.project_grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 300px);
+  grid-gap: 10px;
+  /*background-color: #2196F3;*/
+  border: 1px solid blue;
+  padding: 10px;
+}
+.thumbnail{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+/*.item1 img{
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}*/
+.item1,.item2,.item3,.item4{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+.overlay h4,p{
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.item1:hover .overlay {
+  opacity: 0.5;
+}
+.item2:hover .overlay {
+  opacity: 0.5;
+}
+.item3:hover .overlay {
+  opacity: 0.5;
+}
+.item4:hover .overlay {
+  opacity: 0.5;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project_title{
+  /*position: relative;*/
+  font-size: 50px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+/*========ABOUT ME========*/
+.contact{
+  width: 100%;
+  height: 70vh;
+  border: 1px solid green;
+}
+.contact-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+  /*background-color: #2196F3;*/
+  border: 1px solid green;
+  padding: 10px;
+}
+h3{
+  color: white;
+  text-align: center;
+}
+
+/*============MODAL BOX=========*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  /*z-index: 1;  Sit on top */
+   /* Location of the box */
+   padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  /*background-color: #fefefe;*/
+  /*opacity: 0.5;*/
+  margin: auto;
+  padding: 0;
+  height: 90%;
+  /*width: 100%;*/
+  /*border : 3px solid red;*/
+  /*border: 1px solid #888;*/
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+/*  animation-name: animatetop;
+  animation-duration: 0.4s*/
+}
+
+/* Add Animation */
+/*@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}*/
+
+/* The Close Button */
+.close {
+  color: dimgrey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #063852;
+  /*filter: blur(8px);*/
+  position: absolute;
+  opacity: 0.7;
+  width: 77vw;
+  height: 87vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+/*======img slideshow=======*/
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  
+}
+.modal-item{
+  /*margin: auto;*/
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  /*z-index: 100;*/
+  /*padding: 10px;*/
+}
+.modal-item2 {
+  padding: 10px;
+
+  /*text-align: justify;*/
+}
+.modal-item2 h3{
+  text-align: center;
+  color: white;
+}
+.modal-item2 a{
+  color: #f58301;
+}
+
+.modal-item2 p{
+  text-align: left;
+  font-size: 12px;
+  color: white;
+  overflow: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 20px;
+  position: relative;
+  /*bottom: 8px;*/
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2,.dot3, .dot4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 0;
+}
+
+.active, .dot:hover, .dot2:hover, .dot3:hover ,.dot4:hover  {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
