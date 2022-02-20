@@ -54,8 +54,9 @@ body {
 h1{
   color: white;
   margin: auto;
-  font-size: 75px;
+  font-size: 70px;
   text-align: center;
+  padding-top: 5%;
 }
 
 ul {
@@ -153,7 +154,9 @@ nav ul a{
   /*border : 3px solid red;*/
 }
 .project h2{
+    padding-top: 7%;
     color: white;
+    font-size: 45px;
 
 }
 
