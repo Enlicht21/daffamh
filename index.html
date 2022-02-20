@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<title>Muhammad Daffa : Portfolio</title>
 </head>
 <body>
-	<nav>
+	<nav >
 			<h2 class="logo">Portfolio</h2>
 			<ul>
 				<li><a href="#home">Home</a></li>
@@ -30,7 +31,7 @@
 		<h2 class="project_title">Projects</h2>
 			<div class="project_grid">
 					<a href="#project" id="myBtn" class="item1">
-						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<img src="img/omniRobot project/IMG_20220219_125440.jpg" class="thumbnail">
 						<div class="overlay">
 							<h4>Omnidirectional Mobile Robot</h4>
 							<p>Participation in the Kontes Robot Indonesia (KRI) Competition
@@ -39,7 +40,7 @@
 						</div>
 					</a>
 					<a href="#project" id="myBtn2" class="item2">
-						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<img src="img\iot intern\practicum module prototype.png" class="thumbnail">
 						<div class="overlay">
 							<h4>Remote Practicum Module</h4>
 							<p>Internship program held by the university during the COVID-19 pandemic
@@ -55,7 +56,7 @@
 						</div>
 					</a>	
 					<a href="#project" id="myBtn4" class="item4">
-						<img src="img/pexels-oleg-magni-1040499.jpg" class="thumbnail">
+						<img src="img\skripsi\dcmotor test.png" class="thumbnail">
 						<div class="overlay">
 							<h4>Optimization Project</h4>
 							<p>A project from my final project, making an optimization algorithm to estimating DC Motor parameter values using Particle Swarm Optimization (PSO) algorithm in Arduino Microcontroller</p>
@@ -69,9 +70,21 @@
 		<div class="contact-grid">
 			<div class="about">
 				<h3>About Me</h3>
+				<p>From the brief introduction above, here is just more information about me and <a href="https://github.com/Enlicht21/invicto" target="_blank">my resume can be found at the link here</a>.</p>
+				<h4>Education</h4>
+				<li class="abt">Science Major, SMAN 3 Magelang</li><li class="abt">S1 Electrical Engineering, Universitas Brawijaya</li>
+				<h4>Area of Interests</h4>
+				<li class="abt">Mobile Robots</li><li class="abt">Control Theroy</li><li class="abt">Internet of Things</li><li class="abt">Embedded Systems</li>
 			</div>
 			<div class="info">
 				<h3>Contact</h3>
+				<p class="cont" style="display: inline-block;text-align: left;width: 100%;">
+					<i class='bx bxl-linkedin-square bx-sm'style="color: white;"></i><span><a href="https://www.linkedin.com/in/m-daffa-h/" target="_blank" style="color:#e6f2ff;">Muhammad Daffa Hibatullah</a></span><br>
+					<i class='bx bxs-home bx-sm' style="color: white;"></i><span>Botton Margoharjo No. 18, Magelang, Jawa Tengah</span><br>
+					<!-- <i class='bx bxs-phone bx-sm'style="color: white;"></i><br> -->
+					<i class='bx bxl-gmail bx-sm'style="color: white;"></i><span>daffamuhammad.h21@gmail.com</span><br>
+					<i class='bx bxl-github bx-sm' style="color: white;"></i><span><a href="https://github.com/Enlicht21/" target="_blank" style="color: #e6f2ff;">Enlicht21</a></span><br>
+				</p>
 			</div>
 		</div>
 	</section>
@@ -170,29 +183,29 @@
 		    	<span class="close" id="close3">&times;</span>
 		      <div class="slideshow-container">
 		      	<div class="modal-item">
-					<div class="mySlides3 fade">
+<!-- 					<div class="mySlides3 fade">
 					  <img src="img\skripsi\electronic.jpg" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
 					  <div class="text">Webcam</div>
-					</div>
+					</div> -->
 <!-- 					<div class="mySlides3 fade">
 					  <img src="img\skripsi\dcmotor test.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
 					  <div class="text">DC Motor Parameter Testing with the Device</div>
-					</div>
-					<div class="mySlides3 fade">
+					</div> -->
+				<!-- 	<div class="mySlides3 fade">
 					  <img src="img\skripsi\display.png" style="width:auto;height: 65vh;max-width: 700px;max-height: 70vh">
 					  <div class="text">Parameter Value Display on Device</div>
 					</div> -->
 
 					<div style="text-align:center">
-					  <span class="dot4" onclick="currentSlide(1)"></span> 
-<!-- 					  <span class="dot4" onclick="currentSlide(2)"></span> 
-					  <span class="dot4" onclick="currentSlide(3)"></span> -->
+					  <span class="dot3" onclick="currentSlide(1)"></span> 
+					  <span class="dot3" onclick="currentSlide(2)"></span> 
+<!-- 					  <span class="dot3" onclick="currentSlide(3)"></span> -->
 					</div>
 		      	</div>
 		      	<div class="modal-item2">
 		      		<h3>Lines Detection using OpenCV</h3>
-		      		<p>asdxccxzfwEFE</p>
-		      		<p>This project is documented in the form of a student journal which can be found <a href="https://drive.google.com/file/d/1eK4a-Y5Imlpm3NHg4iTuuDU6gd6FZBAV/view?usp=sharing" target="_blank">here</a>.</p>
+		      		<p>In 2019 during my first year at the Brawijaya Robotics Team organization, our team had a problem with how a Quadruped Robot should be able to run autonomously according to the rules of the competition. Therefore, I had an idea and took the initiative to do a project using a camera to detect the available paths in the arena to guide a Quadruped Robot movement. It took about two more months for my project to be completed. by using opencv as a library of programming for computer vision.</p>
+		      		<p>The program is made on the Raspbian OS for Raspberry Pi at a later stage, but in the early stages of program development was made in Visual Studio 2017 and the source code documentation can be found on github <a href="https://drive.google.com/file/d/1eK4a-Y5Imlpm3NHg4iTuuDU6gd6FZBAV/view?usp=sharing" target="_blank">here</a>.</p>
 		      	</div>
 			  </div>
 
