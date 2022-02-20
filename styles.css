@@ -48,7 +48,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 h1{
@@ -72,7 +72,7 @@ a {
 /* ===CLASS CSS=== */
 
 .home {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100%;
   margin: auto;
   /*border : 3px solid red;*/
@@ -148,7 +148,7 @@ nav ul a{
 .project{
   position: relative;
   margin: auto;
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100%;
   /*border : 3px solid red;*/
 }
@@ -254,6 +254,7 @@ h3{
 .about {
   color: white;
   margin: auto;
+  width: 50vw;
 }
 .about h4{
   padding-top: 0;
